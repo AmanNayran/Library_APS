@@ -1,0 +1,36 @@
+@model Projeto.Models.Books
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Books</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Authorname)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Authorname)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Noofbooks)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Noofbooks)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.BooksId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
