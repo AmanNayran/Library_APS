@@ -15,7 +15,7 @@ namespace Projeto.Models
         [Display(Name = "Endereço")]
         public string? Address { get; set; }
         [Display(Name = "Número de celular")]
-        public int Mobileno { get; set; }
+        public string? Mobileno { get; set; }
 
         // Método para atualizar informações do bibliotecário
         public void UpdateInfo()

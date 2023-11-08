@@ -15,7 +15,7 @@ namespace Projeto.Models
         [Display(Name = "Endereço")]
         public string? Maddress { get; set; }
         [Display(Name = "Número de celular")]
-        public int Mno { get; set; }
+        public string? Mno { get; set; }
 
         // Método para solicitar livros
         public void RequestForBook()
